@@ -3,4 +3,5 @@ class Person
   
   def intialize(attributes)
     attributes.send {|key, value| self.send(("#{key}="), value)}
+  end 
 end
